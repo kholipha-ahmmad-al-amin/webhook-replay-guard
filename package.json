@@ -1,0 +1,21 @@
+{
+  "name": "webhook-replay-guard",
+  "version": "0.1.0",
+  "description": "A dependency-free Node.js webhook verifier with HMAC key rotation and replay protection.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./http": "./src/http-server.js",
+    "./memory-replay-store": "./src/memory-replay-store.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test",
+    "start:example": "node examples/receiver.js",
+    "send:sample": "node examples/send-sample.js"
+  },
+  "license": "MIT"
+}
